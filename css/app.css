@@ -1,0 +1,274 @@
+/* Start Fonts by Google */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+/* End Fonts by Google */
+/* Start Global Ruls */
+*,
+*::before,
+*::after{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+:root{
+    --tx-clr:#fff;
+    --tx-alt:#252525;
+    --main-clr:#;
+    --alt-clr:#f5f5f5;
+}
+.container{
+    width: calc(100% - 30px);
+    padding: 0 20px;
+    margin: auto;
+}
+/* start media query */
+@media (max-width:767px) {
+    .container{
+        width: calc(100% - 30px);
+        padding: 0 20px;
+        margin: auto;
+    }
+}
+@media (min-width:768px) {
+    .container{
+        width: calc(100% - 30px);
+        padding: 0 20px;
+        margin: auto;
+    }
+}
+@media (min-width:992px) {
+    .container{
+        width: calc(100% - 30px);
+        padding: 0 20px;
+        margin: auto;
+    }
+}
+@media (min-width:1200px) {
+    .container{
+        width: calc(100% - 30px);
+        padding: 0 20px;
+        margin: auto;
+    }
+}
+
+/* End media query */
+
+/* End Global Ruls */
+header{
+    position: fixed;
+    z-index: 25;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 55px;
+    background-color: var(--alt-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px 0;
+}
+header .container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+header .container nav li a{
+    text-decoration: unset;
+    font-size: 1.2rem;
+    color: var(--tx-alt);
+}
+.main_section{
+    position: relative;
+    top: 65px;
+    min-height: 100vh;
+}
+.main_section .container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5px;
+    align-items: flex-start;
+    background-color: var(--main-clr);
+
+}
+.container .vido_and_description{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #e4e4e4;
+}
+@media (max-width:768px) {
+    .container .vido_and_description{
+        width: 100%;
+    }
+}
+.container .vido_and_description .video_cont{
+
+}
+.container .vido_and_description .description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px;
+    
+}
+.container .vido_and_description .description .title h2{
+    font-size: 22px;
+    margin: 10px auto 5px;
+}
+.vido_and_description .description .reaction_And_infos{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.vido_and_description .description .reaction_And_infos h3{
+    margin: 0;
+    font-size: 14px;
+    width: -webkit-fill-available;
+    color: #585858;
+    font-weight: 600;
+}
+.vido_and_description .description .reaction_And_infos .react{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+.description .reaction_And_infos .react span{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.description .reaction_And_infos .react span .tooltip::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -25px;
+    left: 50px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent #2525257e transparent;
+}
+
+.description .reaction_And_infos .react span .react-ico{
+    font-size: 23px;
+    color: var(--tx-alt);
+    cursor: pointer;
+}
+.description .reaction_And_infos .react span .react-desc{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--tx-alt);
+    user-select: none;
+    margin: 5px auto;
+}
+.container .vido_and_description .video_cont video {
+    max-width: 100%;
+}
+.description .description_box{
+    position: relative;
+    background-color: #e4e4e4;
+}
+.description .description_box::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 90%;
+    background-color: #20202065;
+    border-radius: 50px;
+}
+
+.container .videos_List{
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(auto-fill , minmax(150px,1fr));
+    justify-content: end;
+    justify-items: end;
+    gap: 5px;
+    flex-basis: 30%;
+}
+
+@media (max-width:992px) {
+    .container .videos_List{
+        flex-basis: 75%;
+        margin-left: auto;
+    }
+    
+}
+@media (max-width:992px) {
+    .container .videos_List{
+        flex-basis: 100%;
+    }
+    
+}
+.container .videos_List .video{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    background-color: #f5f5f5;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    margin-right: auto;
+    padding: 20px;
+    transition: background-color 0.3s ease-out;
+}
+
+.container .videos_List .video:hover{
+    background-color: #e4e4e4;
+}
+.container .videos_List .video .img-container{
+    width: 80%;
+}
+@media (max-width:992px) {
+    
+    .container .videos_List .video .img-container{
+        flex-basis: 25%;
+    }
+}
+.container .videos_List .video .img-container img{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.container .videos_List .video img{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.container .videos_List .video .video_caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.container .videos_List .video .video_caption > h3{
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: right;
+    color: var(--tx-alt);
+}
+.container .videos_List .video .video_caption .channel-name{
+    color: #777;
+    margin-left: auto;
+    font-size: 14px;
+}
