@@ -67,7 +67,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 15px 0;
+    box-shadow: 0 0 15px 0 #999;
 }
 header .container{
     position: relative;
