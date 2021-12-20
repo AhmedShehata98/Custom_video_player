@@ -16,12 +16,16 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">logo</div>
-            <nav>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
+            <div class="logo">
+                <img src="img/favicon.png" alt="">
+                <p>EGTuber</p>
+            </div>
+            <ion-icon class="Menu" name="menu-outline"></ion-icon>
+            <nav class="links">
+                <li><a href="#">Login Account</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trend</a></li>
+                <li><a href="#">Subscription</a></li>
             </nav>
         </div>
     </header>
@@ -29,13 +33,40 @@
         <section class="container">
             <section class="vido_and_description">
                 <div class="video_cont">
-                    <video >
-                        <source src="videos/videos-list/video01.mp4">
+                    <video id="VidoPlayer">
+                        <source src="">
                     </video>
+                    <input type="range" id="seekbar">
+                    <div class="control-box">
+                        <div class="cont-box leftSide">
+                            <ion-icon class="video-ico backword" name="play-skip-back-outline"></ion-icon>
+                            <ion-icon class="video-ico play" name="caret-forward-outline"></ion-icon>
+                            <ion-icon class="video-ico forward" name="play-skip-forward-outline"></ion-icon>
+                            <ion-icon class="video-ico volume" name="volume-high-outline"></ion-icon>
+                            <span class="volume_panel">
+                                <input type="range" id="volumePanel_Seekbar">
+                            </span>
+                        </div>
+
+                        <div class="cont-box rightSide">
+                            <span class="timeDuration">
+                                <p>
+                                
+                                </p>
+                            </span>
+                            <ion-icon class="video-ico settings" name="settings-outline"></ion-icon>
+                            <ion-icon class="video-ico exit-fullScreen" name="exit-outline"></ion-icon>
+                            <ion-icon class="video-ico fullScreen" name="expand-outline"></ion-icon>
+                        </div>
+                    </div>
                 </div>
                     <div class="description">
                         <div class="title">
-                            <h2>Video name</h2>
+                            <h2 class="videoName">Video name</h2>
+                            <span class="channel-And-Logo">
+                                <img src="img/img-list/pexels-logo.svg" alt="">
+                                <p class="chennelName">Channel name</p>
+                            </span>
                         </div>
                         <div class="reaction_And_infos">
                             <h3>5.000.000 views</h3>
@@ -57,68 +88,34 @@
                             </div>
                         </div>
                         <div class="description_box">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, perspiciatis repellat aspernatur dolorem facere eaque aperiam et ipsa nemo corrupti, numquam harum vitae amet quo veritatis cupiditate doloribus expedita repellendus.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, perspiciatis repellat aspernatur dolorem facere eaque aperiam et ipsa nemo corrupti, numquam harum vitae amet quo veritatis cupiditate doloribus expedita repellendus.
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur magnam ad dolorem sequi amet non facilis iste, quidem unde odit sunt blanditiis laboriosam maiores. Veritatis sint vel soluta ipsum voluptate.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rerum laboriosam maxime eveniet natus dolorem tenetur ipsam laborum neque consequatur labore, consequuntur accusantium sunt. Iure dignissimos possimus provident incidunt dicta.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rerum laboriosam maxime eveniet natus dolorem tenetur ipsam laborum neque consequatur labore, consequuntur accusantium sunt. Iure dignissimos possimus provident incidunt dicta.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rerum laboriosam maxime eveniet natus dolorem tenetur ipsam laborum neque consequatur labore, consequuntur accusantium sunt. Iure dignissimos possimus provident incidunt dicta.
+                            </p>
                         </div>
+                        <ion-icon class="expand" name="arrow-down-outline"></ion-icon>
                     </div>
             </section>
             <section class="videos_List">
-                <figure class="video">
-                    <div class="img-container">
-                        <img src="img/img-list/pexels-pixabay-355948.jpg" alt="">
-                    </div>
-                    <div class="video_caption">
-                        <h3 class="video-name">Git Ideas About VS Code Tipe&triks</h3>
-                        <h3 class="channel-name">channel name</h3>
-                    </div>
-                </figure>
-                <figure class="video">
+                <!-- <figure class="video">
                     <div class="img-container">
                         <img src="img/img-list/pexels-pixabay-355948.jpg" alt="">
                     </div>
                     <div class="video_caption">
                         <h3 class="video-name">Git Ideas About VS Code Tipe% triks</h3>
-                        <h3 class="channel-name">channel name</h3>
+                        <span class="channelname_logo">
+                            <img src="img/img-list/pexels-logo.svg" alt="">
+                            <h3 class="channel-name">channel name</h3>
+                        </span>
                     </div>
-                </figure>
-                <figure class="video">
-                    <div class="img-container">
-                        <img src="img/img-list/pexels-pixabay-355948.jpg" alt="">
-                    </div>
-                    <div class="video_caption">
-                        <h3 class="video-name">Git Ideas About VS Code Tipe% triks</h3>
-                        <h3 class="channel-name">channel name</h3>
-                    </div>
-                </figure>
-                <figure class="video">
-                    <div class="img-container">
-                        <img src="img/img-list/pexels-pixabay-355948.jpg" alt="">
-                    </div>
-                    <div class="video_caption">
-                        <h3 class="video-name">Git Ideas About VS Code Tipe% triks</h3>
-                        <h3 class="channel-name">channel name</h3>
-                    </div>
-                </figure>
-                <figure class="video">
-                    <div class="img-container">
-                        <img src="img/img-list/pexels-pixabay-355948.jpg" alt="">
-                    </div>
-                    <div class="video_caption">
-                        <h3 class="video-name">Git Ideas About VS Code Tipe% triks</h3>
-                        <h3 class="channel-name">channel name</h3>
-                    </div>
-                </figure>
-                <figure class="video">
-                    <div class="img-container">
-                        <img src="img/img-list/pexels-pixabay-355948.jpg" alt="">
-                    </div>
-                    <div class="video_caption">
-                        <h3 class="video-name">Git Ideas About VS Code Tipe% triks</h3>
-                        <h3 class="channel-name">channel name</h3>
-                    </div>
-                </figure>
-
+                </figure> -->
+                
             </section>
         </section>
     </main>
+    <script src="js/videos.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
